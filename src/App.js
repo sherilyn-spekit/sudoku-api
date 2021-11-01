@@ -1,5 +1,14 @@
+/* eslint-disable no-unused-vars */
 import logo from './logo.svg';
 import './App.css';
+var sudoku = require('./sudoku-js/sudoku.js');
+var puzzle = sudoku.generate("easy");
+var solvedPuzzle = sudoku.solve(puzzle);
+
+solvedPuzzle = sudoku.solve(puzzle);
+
+console.log(puzzle);
+console.log(solvedPuzzle);
 
 function App() {
   return (
